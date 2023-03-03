@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <!-- Bu websitesi Vefa Ayaz tarafindan yapilimisir. Iletisim icin https://ayazvefa.dev -->
+
+    <!-- This website was builded from Vefa Ayaz. For more information https://ayazvefa.dev -->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<style>
+html {
+height: 100vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+font-size: 32px;
+}
+
+div {
+display: flex;
+}
+
+</style>   
+
+</head>
+  <body>
+
+	<div>width: <span id="width"></span></div>
+	<div>height: <span id="height"></span></div>
+
+    <script>
+var width = screen.width;
+var htmlw = document.getElementById('width')
+
+var height = screen.height;
+var htmlh = document.getElementById('height')
+
+htmlw.innerHTML = width
+htmlh.innerHTML = height
+</script>
+  </body>
+</html>
