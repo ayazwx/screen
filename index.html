@@ -28,10 +28,11 @@ display: flex;
 
 	<div>width: <span id="width"></span></div>
 	<div>height: <span id="height"></span></div>
-	  <input type="text" placeholder="hello" >
+	  <input type="text" placeholder="hello" onclick="getSize()" >
 
     <script>
-var width = screen.width;
+function getSize() {
+	var width = screen.width;
 var htmlw = document.getElementById('width')
 
 var height = screen.height;
@@ -39,6 +40,8 @@ var htmlh = document.getElementById('height')
 
 htmlw.innerHTML = width
 htmlh.innerHTML = height
+}
+	    getSize()
 </script>
   </body>
 </html>
